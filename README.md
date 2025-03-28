@@ -24,3 +24,24 @@ condition before being inserted or updated.
 UNIQUE - ensures that a column contains only unique values
 
 NOT NULL - no null values
+
+Task 4:
+We will create two tables: 
+Let's say that we want to store information about the EVs. Considering that one specific model
+can be offered with various electric motors, it makes sense to create another table that will store these
+engine options, and reference them using the foreign keys in EVs table.
+
+Task 5:
+Regular vs materialized view
+Regular is used for dynamic retrieval of the data, so that every time, upon execution,
+the up-to-date information is retrieved from the table.
+
+Materialized view stores the result of the query. This type of view is used when workign with complex queries.
+Unliek the regular view, it should be updated manually, which makes sense, as it is expensive to keep complex queries up-to-date dynamically.
+The refreshes are either done manually or automatically, in a scheduled way.
+
+Task 6:
+Dividing a big table into 2 smaller ones.
+
+Task 7:
+Demonstration of how COMMIT and ROLLBACK work.
